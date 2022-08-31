@@ -1,18 +1,20 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+var sima struct {
+	fname string
+	lname string
+	age   int
+	score float64
+}
+
+
 
 func main() {
-	ch := make(chan int, 5)
-	ch <- 5
-	ch <- 6
-	close(ch)
-	n, open := <-ch
-	fmt.Printf("Received: %d, open: %t\n", n, open)
-	n, open = <-ch
-	fmt.Printf("Received: %d, open: %t\n", n, open)
-	n, open = <-ch //there is no more data to be read so in output open is false
-	fmt.Printf("Received: %d, open: %t\n", n, open)
+	sima.fname = "fateme"
+	sima.lname = "Jadidi"
+	sima.age = 21
+	sima.score = 16.79
+	fmt.Println(sima)
 }

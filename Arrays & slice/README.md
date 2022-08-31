@@ -61,8 +61,8 @@ A variadic function is a function that accepts a variable number of arguments
 Only the last parameter of a function can be variadic
 <br>
 syntax:
-<br>
-```
+
+``` 
 func funcname(var-name type,var name ...type){
 }
 ```
