@@ -2,19 +2,24 @@ package main
 
 import "fmt"
 
-var sima struct {
-	fname string
-	lname string
-	age   int
-	score float64
+func finsher() {
+	fmt.Println("this is finish")
+
+}
+func largest(nums []int) {
+	defer finsher()
+	fmt.Println("start finding finish")
+	max := nums[0]
+	for _, v := range nums {
+		if v > max {
+			max = v
+		}
+	}
+	fmt.Println("largest number in ", nums, "is", max)
+
 }
 
-
-
 func main() {
-	sima.fname = "fateme"
-	sima.lname = "Jadidi"
-	sima.age = 21
-	sima.score = 16.79
-	fmt.Println(sima)
+	nums := []int{78, 45, 49, 235, 236}
+	largest(nums)
 }
