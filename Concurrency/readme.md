@@ -36,4 +36,5 @@ what is process?<br>
 The execution environment of a program (execution of a program) In programming languages, we can create a PROCESS in the form of concurrency <br>
 why concurrency?<br>
 Because it is clear that the execution time is much shorter<br>
-
+تفاوتشون چیه؟
+**concurrency There is a property of the code that the programmer directly affects the method, but parallelism is a property of the run time that is usually out of reach of the programmer**.<br>
