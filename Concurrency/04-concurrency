@@ -1,1 +1,8 @@
-
+package main
+func main(){
+    runtime.GOMAXPROCS(1) //The maximum amount we give to the program for a proccess
+    for {
+        go fmt.Print(0) //task 1
+        fmt.Print(1) //task 2
+        }
+}
