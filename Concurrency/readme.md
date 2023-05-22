@@ -19,3 +19,23 @@ Channels can be thought of as a pipe using which Goroutines communicate<br>
 use "go" for create goroutine<br><br><br>
 - When a new Goroutine is started, the goroutine call returns immediately. Unlike functions, the control does not wait for the Goroutine to finish executing. The control returns immediately to the next line of code after the Goroutine call and any return values from the Goroutine are ignored.<br><br><br>
 - he main Goroutine should be running for any other Goroutines to run. If the main Goroutine terminates then the program will be terminated and no other Goroutine will run.
+
+
+
+May 22 2023
+what is concurrency in Os?
+قبل از اینکه سیستم های چند هسته وارد بازار بشند سیستم ها تک هسته بودند و هر هسته امکان انجام دادن یک کار رو در یک زمان بیشتر ندارد
+<br>
+ولی الان که داریم از سیستم عامل استفاده می کنیم همزمان چند برنامه رو باهم میتونیم استفاده کنیم و همه چی به صورت موازی انجام میشه ولی زمانیکه داریم از یک هسته استفاده میکنیم امکان concurrency وجود داره و cpu هی سويیچ میکنه رو تسک های مختلف (در حد چند ms)به این تکنیک میگن concurrency 
+
+parallelism 
+مفهوم متفاوتیه در یک زمان واحد چند تا تسک داریم 
+زمانیکه بیشتر از یک core داشته باشم میتونیم چند تا process داشته باشیم این زمانی هست که جند هسته باشیم ولی در کل میتونیم concurrency هم داشته باشیم
+
+<br>
+what is process?
+محیط اجرایی یک برنامه (اجرای یک برنامه)
+در زبان های برنامه نویسی میتونیم یک PROCESS به صورت concurrency ب وجود بیاریم 
+چرا concurrency؟
+چون واضحه که زمان اجراش خیلی کوتاه تره
+
