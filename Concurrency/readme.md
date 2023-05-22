@@ -25,22 +25,15 @@ use "go" for create goroutine<br><br><br>
 May 22 2023
 <br>
 what is concurrency in Os?<br>
-قبل از اینکه سیستم های چند هسته وارد بازار بشند سیستم ها تک هسته بودند و هر هسته امکان انجام دادن یک کار رو در یک زمان بیشتر ندارد
+Before multi-core systems entered the market, systems were single-core and each core could not do more than one task at a time.<br>
+But now we can use several programs at the same time and everything is done in parallel, but when we are using one core, there is a possibility of concurrency and the cpu switches to different tasks.(within a few ms)
+This technique is called concurrency
 <br>
-ولی الان همزمان چند برنامه رو باهم میتونیم استفاده کنیم و همه چی به صورت موازی انجام میشه ولی زمانیکه داریم از یک هسته استفاده میکنیم امکان concurrency وجود داره و cpu هی سويیچ میکنه رو تسک های مختلف
-<br>
-(در حد چند ms)
-<br>
-به این تکنیک میگن concurrency 
-
-parallelism 
-مفهوم متفاوتیه در یک زمان واحد چند تا تسک داریم 
-زمانیکه بیشتر از یک core داشته باشم میتونیم چند تا process داشته باشیم این زمانی هست که جند هسته باشیم ولی در کل میتونیم concurrency هم داشته باشیم
-
+   
+parallelism It is a different concept that we have several tasks at the same time When I have more than one core, we can have several processes.
 <br>
 what is process?
-محیط اجرایی یک برنامه (اجرای یک برنامه)
-در زبان های برنامه نویسی میتونیم یک PROCESS به صورت concurrency ب وجود بیاریم 
-چرا concurrency؟
-چون واضحه که زمان اجراش خیلی کوتاه تره
+The execution environment of a program (execution of a program) In programming languages, we can create a PROCESS in the form of concurrency 
+why concurrency?
+Because it is clear that the execution time is much shorter
 
